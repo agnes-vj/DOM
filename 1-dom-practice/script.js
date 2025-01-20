@@ -1,4 +1,12 @@
 const paragraph = document.getElementById("targetParagraph");
-console.log("Paragraph Content : " + paragraph.innerText);
+paragraph.addEventListener("click",function(){
+	paragraph.innerText = "this is the new paragraph on click";
+})
+paragraph.addEventListener("mouseover", function(){
+	paragraph.innerText = "mouse is hovering over...";
+    paragraph.style.color = "red";
+})
 const button = document.getElementById("changeContentButton");
-console.log("Button Name : " + button.innerText);
+button.addEventListener("click", function(){
+    alert("You clicked a button!");
+})
